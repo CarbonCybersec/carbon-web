@@ -85,7 +85,7 @@ body {
 		var(--gradient-end)
 	);
 	background-size: 400% 400%;
-	animation: gradientAnimation 6s ease infinite;
+	animation: gradientAnimation 12s ease infinite; /* we don't want 2skq complaining */
 }
 
 @keyframes gradientAnimation {
