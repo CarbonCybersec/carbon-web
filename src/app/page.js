@@ -134,7 +134,7 @@ export default function Home() {
 
 			<footer className="bg-gray-900 py-2">
 				<div className="container mx-auto px-4 text-center">
-					<p>&copy; 2025 Carbon Security. All rights reserved.</p>
+					<p>&copy; 2025 Carbon Security. All rights reserved.<br />Easy game easy life</p>
 				</div>
 			</footer>
 		</main>
