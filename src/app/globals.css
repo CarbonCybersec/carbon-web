@@ -1,78 +1,78 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-:root {
-	--gradient-start: #4facfe;
-	--gradient-end: #8244fd;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-	@apply bg-black text-gray-200;
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+    color: white;
+    line-height: 1.6;
 }
+
 
 .gradient-text {
-	@apply text-transparent bg-clip-text;
-	background-image: linear-gradient(
-		to right,
-		var(--gradient-start),
-		var(--gradient-end)
-	);
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.gradient-border {
-	position: relative;
-}
-
-.gradient-border::before {
-	content: "";
-	position: absolute;
-	inset: 0;
-	border-radius: inherit;
-	padding: 2px;
-	background: linear-gradient(
-		to right,
-		var(--gradient-start),
-		var(--gradient-end)
-	);
-	-webkit-mask:
-		linear-gradient(#fff 0 0) content-box,
-		linear-gradient(#fff 0 0);
-	mask:
-		linear-gradient(#fff 0 0) content-box,
-		linear-gradient(#fff 0 0);
-	-webkit-mask-composite: xor;
-	mask-composite: exclude;
-}
 
 .gradient-bg {
-	background: linear-gradient(
-		to right,
-		var(--gradient-start),
-		var(--gradient-end)
-	);
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    transition: background 0.3s ease;
 }
 
+.gradient-bg:hover {
+    background: linear-gradient(90deg, #feb47b, #ff7e5f);
+}
+
+/* Gradient Border */
+.gradient-border {
+    border: 3px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-image-source: linear-gradient(90deg, #ff7e5f, #feb47b);
+}
+
+/* Custom Nav-Link Hover */
 .nav-link {
-	position: relative;
-	transition: color 0.3s ease;
+    text-decoration: none;
+    color: white;
+    position: relative;
 }
 
 .nav-link::after {
-	content: "";
-	position: absolute;
-	width: 0;
-	height: 2px;
-	bottom: -4px;
-	left: 0;
-	background: linear-gradient(
-		to right,
-		var(--gradient-start),
-		var(--gradient-end)
-	);
-	transition: width 0.3s ease;
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    transition: width 0.3s ease;
 }
 
 .nav-link:hover::after {
-	width: 100%;
+    width: 100%;
+}
+
+/* real */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animated-gradient {
+    background: linear-gradient(45deg, #7f00ff, #e100ff, #d1c4e9);
+    background-size: 200% 200%;
+    animation: gradient-animation 4s ease infinite;
+    color: white;
 }
