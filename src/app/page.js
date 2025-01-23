@@ -2,11 +2,11 @@ export default function Home() {
 	return (
 		<main className="min-h-screen">
 			<nav className="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-80 backdrop-blur-sm">
-				<div className="container mx-auto px-4 py-4 flex justify-between items-center">
+				<div className="container mx-auto px-4 py-4 flex justify-between items-center flex-wrap">
 					<h1 className="text-2xl font-bold gradient-text">
 						Carbon Security
 					</h1>
-					<div className="space-x-6">
+					<div className="space-x-6 flex flex-wrap justify-center">
 						<a
 							href="#home"
 							className="nav-link hover:gradient-text transition-colors duration-300"
@@ -82,7 +82,7 @@ export default function Home() {
 						className="min-h-screen flex items-center justify-center w-[calc(98%)] animated-gradient py-20 rounded-3xl"
 					>
 						<div className="container mx-auto px-4">
-							<h2 className="text-4xl font-bold mb-12 gradient-text text-center">
+							<h2 className="text-4xl font-bold mb-12 text-white text-center">
 								About Us
 							</h2>
 							<div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -120,7 +120,7 @@ export default function Home() {
 					</h2>
 					
 					<h3 className="text-2xl font-bold mb-8">
-					idfk what to put here, links to our personal websites and github profiles maybe?
+						idfk what to put here, links to our personal websites and github profiles maybe?
 					</h3>
 					
 					<button
