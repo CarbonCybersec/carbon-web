@@ -79,7 +79,7 @@ export default function Home() {
 				<div className="flex justify-center items-center">
 					<section
 						id="about"
-						className="min-h-screen flex items-center justify-center w-[calc(98%)] bg-white py-20 rounded-3xl"
+						className="min-h-screen flex items-center justify-center w-[calc(98%)] animated-gradient py-20 rounded-3xl"
 					>
 						<div className="container mx-auto px-4">
 							<h2 className="text-4xl font-bold mb-12 gradient-text text-center">
