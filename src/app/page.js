@@ -78,35 +78,29 @@ export default function Home() {
 			<div className="p-1">
 				<div className="flex justify-center items-center">
 					<section
-						id="about"
-						className="min-h-screen flex items-center justify-center w-[calc(98%)] bg-white py-20 rounded-3xl"
-					>
-						<div className="container mx-auto px-4">
-							<h2 className="text-4xl font-bold mb-12 gradient-text text-center">
-								About Us
-							</h2>
-							<div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-								<div>
-									<p className="text-lg mb-6 text-gray-800">
-    									Lorem ipsum dolor sit amet, consectetur
-    									adipiscing elit. Sed do eiusmod tempor
-    									incididunt ut labore et dolore magna aliqua. 
-    									Lorem ipsum dolor sit amet, consectetur
-    									adipiscing elit. Sed do eiusmod tempor
-    									incididunt ut labore et dolore magna aliqua.
-									</p>
-									<p className="text-lg mb-6 text-gray-800">
-    									Lorem ipsum dolor sit amet, consectetur
-    									adipiscing elit. Sed do eiusmod tempor
-    									incididunt ut labore et dolore magna aliqua.
-									</p>
-									<button className="px-6 py-2 rounded-full text-lg font-semibold gradient-bg text-white">
-										Learn More
-									</button>
-								</div>
-							</div>
-						</div>
-					</section>
+    id="about"
+    className="min-h-screen flex items-center justify-center w-[calc(98%)] animated-gradient py-20 rounded-3xl"
+>
+    <div className="container mx-auto px-4">
+        <h2 className="text-4xl font-bold mb-12 gradient-text text-center">
+            About Us
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <p className="text-lg mb-6 text-gray-800">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p className="text-lg mb-6 text-gray-800">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <button className="px-6 py-2 rounded-full text-lg font-semibold gradient-bg text-white">
+                    Learn More
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
 				</div>
 			</div>
 
