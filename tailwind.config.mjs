@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+const config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,8 +10,14 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        colors: {
+          "gradient-start": "var(--gradient-start)",
+          "gradient-end": "var(--gradient-end)",
+        },
       },
     },
   },
   plugins: [],
 };
+
+export default config;
